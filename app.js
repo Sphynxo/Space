@@ -24,7 +24,7 @@ function addAstronauts(amount, name) {
 }
 async function fetchData() {
   try {
-    const response = await fetch("https://api.open-notify.org/astros.json/");
+    const response = await fetch("http://api.open-notify.org/astros.json/");
     if (!response.ok) {
       throw new Error("Failed to fetch");
     }
